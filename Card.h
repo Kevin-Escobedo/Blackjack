@@ -10,7 +10,7 @@ private:
     const char* suit;
 
 public:
-    Card(const char* newValue, const char* newSuit);
+    Card(const char* newValue="A", const char* newSuit="Club");
     Card(const Card& c);
     ~Card();
     Card& operator =(const Card& c);

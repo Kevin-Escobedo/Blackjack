@@ -1,19 +1,17 @@
-#include "Card.h"
+#include "Deck.h"
 
 int main(int argc, char** argv)
 {
-    const char* value = "A";
-    const char* suit = "Spade";
+    int numDecks = 1;
 
-    if(argc == 3)
+    if(argc == 2)
     {
-        value = argv[1];
-        suit = argv[2];
+        numDecks = atoi(argv[1]);
     }
 
-    Card c(value, suit);
-
-    std::cout<<c<<std::endl;
+    Deck d(numDecks);
+    d.shuffleDeck();
+    std::cout<<d<<std::endl;
 
     return 0;
 }

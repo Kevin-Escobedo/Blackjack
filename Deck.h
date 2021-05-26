@@ -3,6 +3,8 @@
 
 #include "Card.h"
 #include <algorithm>
+#include <random>
+#include <chrono>
 
 class Deck
 {

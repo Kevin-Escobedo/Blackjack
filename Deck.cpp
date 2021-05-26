@@ -62,7 +62,8 @@ Deck& Deck::operator =(const Deck& d)
 
 void Deck::shuffleDeck()
 {
-    std::random_shuffle(&deck[0], &deck[length]);
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::shuffle(&deck[0], &deck[length], std::default_random_engine(seed));
 }
 
 const Card Deck::operator [](const int index)

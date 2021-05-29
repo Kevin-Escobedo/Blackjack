@@ -1,4 +1,4 @@
-#include "Deck.h"
+#include "Blackjack.h"
 
 int main(int argc, char** argv)
 {
@@ -9,9 +9,8 @@ int main(int argc, char** argv)
         numDecks = atoi(argv[1]);
     }
 
-    Deck d(numDecks);
-    d.shuffleDeck();
-    std::cout<<d<<std::endl;
+    Blackjack b(numDecks);
+    std::cout<<b<<std::endl;
 
     return 0;
 }

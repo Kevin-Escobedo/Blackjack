@@ -5,7 +5,7 @@ CXXFLAGS=-std=c++17 -Wpedantic -Wall -Werror -Wextra -Weffc++ -Wzero-as-null-poi
 LIBS=-static-libgcc -static-libstdc++
 OPTIMIZE=-O2
 
-FILES=Card.h Card.cpp Deck.h Deck.cpp main.cpp
+FILES=Card.h Card.cpp Deck.h Deck.cpp Blackjack.h Blackjack.cpp main.cpp
 TARGET=blackjack
 
 all: $(TARGET) $(TARGET).exe
